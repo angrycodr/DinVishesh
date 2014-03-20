@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backgroundspurplebackground" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="0"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Home"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="40sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        android:weightSum="100" >
+
+        <ImageView
+            android:id="@+id/prevDate"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center|left"
+            android:layout_weight="22"
+            android:src="@drawable/cal_left_arrow" />
+
+        <TextView
+            android:id="@+id/Date"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="60"
+            android:gravity="center"
+            android:text="Date"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <ImageView
+            android:id="@+id/nextDate"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center|right"
+            android:layout_marginRight="10sp"
+            android:layout_weight="20"
+            android:src="@drawable/cal_right_arrow" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvEvents"
+        android:layout_width="match_parent"
+        android:layout_height="218dp" >
+
+    </ListView>
+
+    <Button
+        android:id="@+id/viewCalendar"
+        android:layout_width="118dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Calendar" />
+
+    <Button
+        android:id="@+id/btaddEvent"
+        android:layout_width="118dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="Add Event" />
+
+</LinearLayout>
